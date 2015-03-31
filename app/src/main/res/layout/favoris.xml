@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dip">
+
+<TextView android:id="@+id/nomFavoris"
+    android:layout_width="60dip"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:text="Nom"/>
+
+<TextView android:id="@+id/noteFavoris"
+    android:layout_width="60dip"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/nomFavoris"
+    android:gravity="center"
+    android:text="5" />
+
+<CheckBox android:id="@+id/checkFavoris"
+    android:layout_width="60dip"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/noteFavoris"
+    android:checked="true" />
+<Button android:id="@+id/buttonFavoris"
+    android:layout_width="160dip"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/checkFavoris"
+    android:text="@string/selectionner"
+    android:textAllCaps="false"/>
+	
+<TextView android:id="@+id/dateFavoris"
+	android:layout_width="60dip"
+	android:layout_height="fill_parent"
+	android:layout_toRightOf="@id/buttonFavoris"
+	android:gravity="center" />
+</RelativeLayout>

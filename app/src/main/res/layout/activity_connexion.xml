@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip" >
+
+    <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TableRow>
+            <TextView android:text="@string/email" />
+            <EditText android:id="@+id/email"
+                android:hint="@string/exemple_email"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/password" />
+            <EditText android:id="@+id/password"
+                android:inputType="textPassword"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox android:id="@+id/creation"
+                android:text="Créer le compte"/>
+        </TableRow>
+        <TableRow>
+            <Button android:layout_span="2"
+                android:text="@string/connexion"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/boutonConnexion"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_span="2" android:id="@+id/messageRetour"
+                android:textColor="#FF0000"
+                android:paddingTop="10dip"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
